@@ -29,11 +29,8 @@ class MainItem extends React.Component{
     }
 
     editItem(id){
-        console.log('editItem')
         var items = [...store.getState().Items]
-        console.log(items, id)
         this.itemToEdit = items.filter(item => item.id === id)[0]
-        console.log(this.itemToEdit)
         this.createItem()
     }
 
